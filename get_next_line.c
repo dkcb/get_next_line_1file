@@ -6,14 +6,14 @@
 /*   By: dkocob <dkocob@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/04 15:57:56 by dkocob        #+#    #+#                 */
-/*   Updated: 2021/11/19 17:22:21 by dkocob        ########   odam.nl         */
+/*   Updated: 2021/11/20 16:02:46 by dkocob        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
-# define BUFFER_SIZE 33
+# define BUFFER_SIZE 3344
 
 size_t	ft_strlcpy(char *d, char *s, int len)
 {
@@ -70,8 +70,8 @@ char	*gnl(int fd, char *line, int i, int pos)
 char	*get_next_line(int fd)
 {
 	char	*line;
-
 	line = malloc(sizeof(char) * 2147483647);
+	// line = malloc(0);
 	if (!line)
 		return (NULL);
 	return (gnl(fd, line, 1, 0));
