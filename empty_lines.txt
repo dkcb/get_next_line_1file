@@ -1,39 +1,4 @@
-t t t   
-t
-t
-	 t 	
-	  t	T 
-	  	T 
-		  	t	
-			   t
+012345
+67
+890
 
-				    	TT	
-							T	TTT
-							T
-							TTT 
-							TTT1
-							TTT
-
-
-									  
-									  		TTT
-											   TTT 
-											   T 
-											   T 
-
-											   TTT
-											   T
-											   TTTT
-											   TTTT
-											   TTTT
-											   T
-							TTTT
-							TTTT
-							T
-
-							T
-
-
-				TTTT
-				T
-				T

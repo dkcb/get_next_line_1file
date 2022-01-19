@@ -16,9 +16,17 @@ int main()
 	int j = 0;
 	int l = 0;
 
-	if ((fd = open ("./empty_lines.txt", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
+	// if ((fd = open ("./empty_lines.1.txt", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
+	if ((fd = open ("./empty_lines.2.txt", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
+	// if ((fd = open ("test/files/alternate_line_nl_with_nl", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
+	// if ((fd = open ("test/files/alternate_line_nl_with_nl", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
+	// if ((fd = open ("test/files/43_no_nl", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
+	// if ((fd = open ("./empty_lines.txt", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
+	// if ((fd = open ("test/files/42_with_nl", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
+	// if ((fd = open ("test/files/41_with_nl", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
+	// if ((fd = open ("test/files/multiple_line_no_nl", O_CREAT | O_RDWR, S_IRWXU | S_IRWXG | S_IRWXO)) > 0)
 	{
-		while(i < 40)
+		while(i < 33)
 		{
 			ww = get_next_line(fd);
 			if (ww == NULL)
@@ -27,6 +35,8 @@ int main()
 			l++;
 			// while(1)
 			// 	continue ;
+			// system("leaks main_gnl");
+			ww[0] = 'Y';
 			free(ww);
 			i++;
 		}
